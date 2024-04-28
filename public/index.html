@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomST API</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center justify-center h-screen">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 mt-4 glow">
+        Welcome to RandomST
+    </h1>
+    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+        A simple api to generate random jokes, quotes, and much more...
+    </p>
+    <a href="/about" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+        Learn More
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <div class="grid grid-cols-1">
+        <div class="flex justify-center space-x-2">
+            <a href="/api/darkhumor" class="btn bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-lg py-2 px-4 rounded">Dark Humor</a>
+            <a href="/api/facts" class="btn bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-lg py-2 px-4 rounded">Facts</a>
+            <a href="/api/insults" class="btn bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-lg py-2 px-4 rounded">Insults</a>
+            <a href="/api/jokes" class="btn bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-lg py-2 px-4 rounded">Jokes</a>
+            <a href="/api/questions" class="btn bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-lg py-2 px-4 rounded">Questions</a>
+            <a href="/api/quotes" class="btn bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-lg py-2 px-4 rounded">Quotes</a>
+        </div>
+    </div>
+    
+    <div class="absolute bottom-0 mb-4">
+        <p class="text-sm text-center">Got more jokes to suggest? <a href="https://ym5gzdeantb.typeform.com/to/QOV58BHI" class=""><u>Click here</u></a> to add them!</p>
+        <p class="text-sm text-center">Check out <a href="https://github.com/Sintzy/RandomST" target="_blank"><u>GitHub</u></a>.</p>
+    </div>
+
+    <style>
+        .glow {
+          transition: 0.3s;
+        }
+        .glow:hover {
+          text-shadow: calc(50% - 0.5ch) calc(50% - 0.5em) 10px rgba(255, 255, 255, 0.7);
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a202c;
+                color: #fff;
+            }
+        }
+      </style>
+      <script>
+        document.addEventListener("mousemove", (event) => {
+          const x = event.pageX / window.innerWidth;
+          const y = event.pageY / window.innerHeight;
+          const shadowX = (x - 0.5) * 20;
+          const shadowY = (y - 0.5) * 20;
+          const glow = document.querySelector(".glow");
+          glow.style.textShadow = `${shadowX}px ${shadowY}px 10px rgba(255, 255, 255, 0.7)`;
+        });
+      </script>
+</body>
+
+</html>

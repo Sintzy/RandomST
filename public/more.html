@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomP</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center justify-center h-screen">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 mt-4 glow" href="/">
+        RandomST
+    </h1>
+    <p style="text-align: center;" class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+      Welcome to RandomST! This, is my very first API project, developed right here in Portugal.<br><br>
+
+      This API is designed to generate a variety of content, from clever phrases to hilarious jokes and intriguing facts. If you're looking to add some humor/content to your project, this API has you covered.
+      <br><br>
+      As a newcomer to the world of API development, I've poured my heart into creating a platform that's both user-friendly and entertaining. But the journey doesn't end here – I'm excited to invite you to be a part of this project's growth.
+      <br><br>
+      You can contribute to this project on GitHub by sharing your ideas, suggestions, or even diving into the code. Whether you're a seasoned developer or simply passionate about the possibilities of APIs, your ideas are invaluable in shaping the future of this platform.
+      <br><br>
+      Thank you for visiting, and I hope you enjoy using this API as much as I enjoyed creating it.
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <br>
+    
+    <div class="absolute bottom-0 mb-4">
+      <p class="text-sm text-center">Got more jokes to suggest? <a href="https://ym5gzdeantb.typeform.com/to/QOV58BHI" class=""><u>Click here</u></a> to add them!</p>
+      <p class="text-sm text-center">Check out <a href="https://github.com/Sintzy/RandomST" target="_blank"><u>GitHub</u></a>.</p>
+  </div>
+
+    <style>
+        .glow {
+          transition: 0.3s;
+        }
+        .glow:hover {
+          text-shadow: calc(50% - 0.5ch) calc(50% - 0.5em) 10px rgba(255, 255, 255, 0.7);
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a202c;
+                color: #fff;
+            }
+        }
+      </style>
+      <script>
+        document.addEventListener("mousemove", (event) => {
+          const x = event.pageX / window.innerWidth;
+          const y = event.pageY / window.innerHeight;
+          const shadowX = (x - 0.5) * 20;
+          const shadowY = (y - 0.5) * 20;
+          const glow = document.querySelector(".glow");
+          glow.style.textShadow = `${shadowX}px ${shadowY}px 10px rgba(255, 255, 255, 0.7)`;
+        });
+      </script>
+</body>
+
+</html>
